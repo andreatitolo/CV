@@ -6,14 +6,13 @@
 # for the HTML and PDF rendering. This exercise is left to the reader.
 
 # Knit the HTML version
-rmarkdown::render(here::here("cv_functions/cv.rmd"),
+rmarkdown::render(here::here("/cv_functions/cv.rmd"),
                   params = list(pdf_mode = FALSE),
-                  output_file = "titolo_cv.html",
-                  output_dir = here::here())
+                  output_file = here::here("titolo_cv.html"))
 
 # Knit the PDF version to temporary html location
 tmp_html_cv_loc <- fs::file_temp(ext = ".html")
-rmarkdown::render(here::here("cv_functions/cv.rmd"),
+rmarkdown::render(here::here("/cv_functions/cv.rmd"),
                   params = list(pdf_mode = TRUE),
                   output_file = tmp_html_cv_loc)
 
