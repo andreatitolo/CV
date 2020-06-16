@@ -51,7 +51,7 @@ Aside
 
 ```{r}
 if(params$pdf_mode){
-  cat("View this CV online with links at _andreatitolo.rbind.io/files/_")
+  cat("View this CV online with links at _andreatitolo.rbind.io/files/at_cv.html_")
 } else {
   cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://andreatitolo.rbind.io/files/titolo_cv.pdf)")
 }
