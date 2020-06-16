@@ -1,5 +1,5 @@
 ---
-title: "Andrea Titolo's CV"
+title: "Titolo CV"
 author: Andrea Titolo
 date: "`r Sys.Date()`"
 params:
@@ -51,9 +51,9 @@ Aside
 
 ```{r}
 if(params$pdf_mode){
-  cat("View this CV online with links at _https://github.com/andreatitolo/CV/titolo_cv.html_")
+  cat("View this CV online with links at _andreatitolo.rbind.io/files/_")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/andreatitolo/CV/titolo_cv.pdf)")
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://andreatitolo.rbind.io/files/titolo_cv.pdf)")
 }
 ```
 
@@ -208,11 +208,13 @@ Computer and Technical Skills {data-icon=keyboard-o}
 CV %<>% print_section('computer_and_technical_skills')
 ```
 
-
+<!-- These breaks just force a new page so section doesnt get cut off -->
+<br>
+<br>
+<br>
 
 
 ```{r}
 CV %<>% print_links()
 ```
-
 

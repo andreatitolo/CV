@@ -7,8 +7,8 @@ library(datadrivencv)
 datadrivencv::use_datadriven_cv(
   full_name = "Andrea Titolo",
   data_location = "https://docs.google.com/spreadsheets/d/15_Fwjl1sag5T-qgyu3ylX2fJpAJLgT2le1ZS-_ux3Lk/edit#gid=0",
-  pdf_location = "https://github.com/andreatitolo/CV/titolo_cv.pdf",
-  html_location = "https://github.com/andreatitolo/CV/titolo_cv.html",
+  pdf_location = "https://andreatitolo.rbind.io/files/titolo_cv.pdf",
+  html_location = "andreatitolo.rbind.io/cv",
   source_location = "https://github.com/andreatitolo/CV",
   output_dir = here::here("cv_functions"),
   use_network_logo = FALSE
