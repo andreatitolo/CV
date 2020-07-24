@@ -1,5 +1,5 @@
 ---
-title: "Titolo CV"
+title: "Andrea Titolo's CV"
 author: Andrea Titolo
 date: "`r Sys.Date()`"
 params:
@@ -46,12 +46,12 @@ Aside
 ================================================================================
 
 <!-- Swap image with your preferred logo -->
-![logo](D:/RProjects/CV/at_image.jpg){width=0%}
+![logo](https://cran.r-project.org/Rlogo.svg){width=0%}
 
 
 ```{r}
 if(params$pdf_mode){
-  cat("View this CV online with links at _andreatitolo.rbind.io/files/at_cv.html_")
+  cat("View this CV online with links at https://bit.ly/2ZTeqIm")
 } else {
   cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://andreatitolo.rbind.io/files/titolo_cv.pdf)")
 }
@@ -95,6 +95,13 @@ Andrea Titolo {#title}
 ```{r}
 # Note the special double pipe so we modify the CV object in place
 CV %<>% print_text_block("intro") 
+```
+
+Current Position {data-icon=university data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('work_current')
 ```
 
 
@@ -147,7 +154,9 @@ Congresses and Conferences {data-icon=suitcase}
 CV %<>% print_section('congresses_and_conferences')
 ```
 
-
+<br>
+<br>
+<br>
 
 Conferences Organization  {data-icon=users}
 --------------------------------------------------------------------------------
