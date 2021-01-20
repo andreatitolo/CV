@@ -136,12 +136,12 @@ CV %<>% print_section('academic_articles')
 <br>
 <br>
 
-Archaeological Excavations {data-icon=compass}
+Fieldwork Experience {data-icon=compass}
 --------------------------------------------------------------------------------
 
 
 ```{r}
-CV %<>% print_section('archaeological_excavations')
+CV %<>% print_section('fieldwork_experience')
 ```
 
 
